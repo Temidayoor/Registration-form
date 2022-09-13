@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DelonApps Registration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" />
+
+    <link rel="stylesheet" href="../css/mainstyle.css" type="text/css" />
+
+    <link rel="stylesheet" href="../css/responsive.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-ins">
+            <div class="logo">
+                <a href="#"><img src="/images/delon-logo.jpg" /></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="registration-form-wrap">
+
+        <h1>Registration</h1>
+
+        <div class="registration-form">
+
+            <div class="tab">
+                <h2 class="fs-title">Personal Details</h2>
+
+                <form class="contact_form" action="https://formsubmit.co/0b9ec8d0d4d11a52eef6024c9d7bf2b7" method="POST">
+                    
+                         <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <input type="hidden" name="_next" value="http://127.0.0.1:54751/success.html" >
+                    
+                      
+                    <input type="hidden" name="_token" value="5JeiQNEPMj5Dy7kWb7NoebGbPOwrmO08048uyhya">
+                    <div class="form-itm-wrap">
+
+                        <div class="form-itm form-group full-width">
+                            <label>Full Name</label>
+                            <input type="text" name="Full&nbsp;Name" placeholder="Full Name" value="" required />
+                        </div>
+
+                        <div class="form-itm form-group half-width">
+                            <label>Phone number</label>
+                            <input type="tel" name="Phone&nbsp;Number" placeholder="Phone Number" value="" required />
+                        </div>
+
+                        <div class="form-itm form-group full-width">
+                            <label>Name of Institution</label>
+                            <input type="text" name="University&nbsp;Attended" placeholder="Which university did you attend?" value="" />
+                        </div>
+
+
+                        <div class="form-itm form-group half-width">
+                            <label>Qualification</label>
+                            <input type="text" name="Qualification" placeholder="" value="" required />
+                        </div>
+
+                        <div class="form-itm form-group full-width">
+                            <label>Course of Study</label>
+                            <input type="text" name="Course" placeholder="What did you study?" value="" />
+                        </div>
+
+                        <div class="form-itm form-group full-width">
+                            <label>Place of Work</label>
+                            <input type="text" name="Work" placeholder="" value="" />
+                        </div>
+
+                        <div class="form-itm form-group full-width">
+                            <label>Course Interest</label>
+                            <select name="Course&nbsp;Interest" class="selection" required>
+                                <option value="backend_development">BACKEND DEVELOPMENT</option>
+                                <option value="frontend_development">FRONTEND DEVELOPMENT</option>
+                                <option value="android_development">ANDROID DEVELOPMENT</option>
+                                <option value="ios_development">IOS DEVELOPMENT</option>
+                                <option value="devops">AZURE</option>
+                                <option value="data_science">DATA SCIENCE</option>
+                            </select>
+                        </div>
+
+                        <!---  <div class="form-itm form-group full-width">
+                              <div class="consent-wrap">
+                                  <input type="checkbox" name="consent" value="yes" id="consent_check" />
+                                  <label for="consent_check">
+                                      <span>
+                                          Kindly understand that by applying to the Covenant Community Group you give consent to process and store your personal information and other data you provided. The use of the data is solely for reports, analysis and insights related to the Covenant Community Groups.
+                                      </span>
+                                  </label>
+                              </div>
+                              <p><a href="https://registration.tcncommunitygroups.org/privacypolicy">Read our Privacy policy here</a></p>
+                          </div> --->
+
+                    </div>
+
+                    <button type="submit" class="btn">SUBMIT</button>
+
+
+
+                    <!-- <div class="btn-wrap">
+                        <input type="hidden" name="passed_form1" value="yes" />
+                        <input type="hidden" name="created_at" value="2022-09-12" />
+                        <input type="submit" name="submit" value="SUBMIT" class="prevBtn action-button" enabled />
+                    </div> --->
+                    
+                    <div class="popup" id="popup">
+                        <img src="images/ticck.png">
+                        <h2>Thank You!</h2>
+                        <p>Your details has been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                    
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-ins">
+                <div class="footer-left">
+                    &copy; 2022 DelonApps
+                </div>
+                <div class="footer-right">
+                    <a href="https://delonapps.com">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Jquery JS-->
+    
+    <script>
+        let popup = document.getElementById("popup");
+        
+        function openPopup() {
+            popup.classList.add("open-popup");
+            }    
+    
+        function openPopup() {
+            popup.classList.remove("open-popup");
+            }     
+    </script>
+    
+   
+    
+        
+
+    <!-- Main JS-->
+<!--- <script src="js/global.js"></script> --->
+
+</body>
+
+</html>
+

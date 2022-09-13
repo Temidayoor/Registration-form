@@ -1,0 +1,42 @@
+@media only screen and (min-width: 1441px) {
+    
+}
+
+
+
+@media only screen and (max-width: 1025px) {
+    
+}
+
+
+@media only screen and (max-width: 830px) {
+    .registration-form input[type=checkbox] {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+@media only screen and (max-width:480px) {
+    .form-itm.half-width {
+        width: 99%;
+    }
+
+
+    .registration-form .tab {
+        padding: 30px 20px;
+    }
+
+    .registration-form input[type=checkbox] {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only Scren and (max-width:320px) {
+    .registration-form input[type=checkbox] {
+        width: 50px;
+        height: 50px;
+    }
+}
